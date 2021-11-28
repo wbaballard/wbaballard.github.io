@@ -4,18 +4,16 @@ import Header from '@components/Header'
 export default function Home() {
   return (
     <div className="container">
-      <div className="main">
       <Head class="post-header">
         <title>Ben Ballard</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
+    <div class="intro">
       <main>
         <Header title="Welcome" />
-        <article class="main">
-          <h3 id="about-me">About Ben</h3>
-          <p>Ben Ballard is a cybersecurity engineer at the MITRE Corporation and an affiliate of the Citizen Lab at the University of Toronto. Ben has served as a Google Public Policy Fellow at the Electronic Frontier Foundation and an X-Force Fellow with the National Security Innovation Network. His research centers around the international governance of information security and privacy, especially data appropriation, surveillance, and deception. At work, he contributes to hardware security projects and privacy attacks research.</p>
-        </article>
+          <p>Ben Ballard is a cybersecurity engineer at the MITRE Corporation and an affiliate of the Citizen Lab at the University of Toronto. Ben has served as a Google Public Policy Fellow at the Electronic Frontier Foundation and an X-Force Fellow with the National Security Innovation Network. His research centers around the international governance of information security and privacy, especially data appropriation, surveillance, and deception. At work, he contributes to hardware security projects and privacy attacks research.
+          </p>
       </main>
 
     </div>
