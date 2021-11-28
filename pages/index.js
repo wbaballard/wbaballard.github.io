@@ -9,14 +9,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-    <div class="intro">
       <main>
         <Header title="Welcome" />
-          <p>Ben Ballard is a cybersecurity engineer at the MITRE Corporation and an affiliate of the Citizen Lab at the University of Toronto. Ben has served as a Google Public Policy Fellow at the Electronic Frontier Foundation and an X-Force Fellow with the National Security Innovation Network. His research centers around the international governance of information security and privacy, especially data appropriation, surveillance, and deception. At work, he contributes to hardware security projects and privacy attacks research.
+          <p className="description">
+            Ben Ballard is a cybersecurity engineer at the MITRE Corporation and an affiliate of the Citizen Lab at the University of Toronto. Ben has served as a Google Public Policy Fellow at the Electronic Frontier Foundation and an X-Force Fellow with the National Security Innovation Network. His research centers around the international governance of information security and privacy, especially data appropriation, surveillance, and deception. At work, he contributes to hardware security projects and privacy attacks research.
           </p>
       </main>
 
-    </div>
       </div>
   )
 }
