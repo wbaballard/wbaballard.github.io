@@ -3,6 +3,7 @@ import Header from '@components/Header'
 import Navbar from '@components/Navbar'
 import Footer from '@components/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -18,16 +19,31 @@ export default function Home() {
       
       <main className={styles.main}>
         <div className={styles.hero}>
-          <h1 className={styles.title}>Ben Ballard</h1>
-          <h2 className={styles.subtitle}>Cybersecurity Engineer</h2>
-          
-          <div className={styles.cta}>
-            <Link href="/projects">
-              <a className={styles.button}>View Projects</a>
-            </Link>
-            <Link href="/contact">
-              <a className={styles.buttonOutline}>Get In Touch</a>
-            </Link>
+          <div className={styles.heroContent}>
+            <div className={styles.profileImageContainer}>
+              {/* Replace with your actual image in the public folder */}
+              <Image 
+                src="/profile-photo.jpg" 
+                alt="Ben Ballard" 
+                width={150} 
+                height={150} 
+                className={styles.profileImage}
+              />
+            </div>
+            
+            <div className={styles.heroText}>
+              <h1 className={styles.title}>Ben Ballard</h1>
+              <h2 className={styles.subtitle}>Cybersecurity Engineer</h2>
+              
+              <div className={styles.cta}>
+                <Link href="/projects">
+                  <a className={styles.button}>View Projects</a>
+                </Link>
+                <Link href="/contact">
+                  <a className={styles.buttonOutline}>Get In Touch</a>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         
