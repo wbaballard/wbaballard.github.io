@@ -14,9 +14,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">
-          <a>BB</a>
-        </Link>
+        <Link href="/" className={styles.logo}>BB</Link>
       </div>
       
       <button 
@@ -44,19 +42,19 @@ export default function Navbar() {
       
       <ul className={`${styles.navItems} ${isMenuOpen ? styles.navOpen : ''}`}>
         <li className={router.pathname === "/" ? styles.active : ""}>
-          <Link href="/"><a>Home</a></Link>
+          <Link href="/" className={styles.navItem}>Home</Link>
         </li>
         <li className={router.pathname === "/about" ? styles.active : ""}>
-          <Link href="/about"><a>About</a></Link>
+          <Link href="/about" className={styles.navItem}>About</Link>
         </li>
         <li className={router.pathname === "/projects" ? styles.active : ""}>
-          <Link href="/projects"><a>Projects</a></Link>
+          <Link href="/projects" className={styles.navItem}>Projects</Link>
         </li>
         <li className={router.pathname === "/blog" ? styles.active : ""}>
-          <Link href="/blog"><a>Blog</a></Link>
+          <Link href="/blog" className={styles.navItem}>Blog</Link>
         </li>
         <li className={router.pathname === "/contact" ? styles.active : ""}>
-          <Link href="/contact"><a>Contact</a></Link>
+          <Link href="/contact" className={styles.navItem}>Contact</Link>
         </li>
       </ul>
     </nav>

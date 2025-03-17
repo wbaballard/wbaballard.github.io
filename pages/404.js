@@ -19,9 +19,7 @@ export default function Custom404() {
           The page you are looking for doesn't exist or has been moved.
         </p>
         
-        <Link href="/">
-          <a className={styles.homeButton}>Return to Home</a>
-        </Link>
+        <Link href="/" className={styles.homeButton}>Return to Home</Link>
       </main>
       
       <Footer />
