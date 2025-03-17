@@ -1,0 +1,175 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 100px 2rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .contactWrapper {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .contactInfo {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .contactInfo h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .contactInfo > p {
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contactMethod {
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+  }
+  
+  .contactIcon {
+    margin-right: 1rem;
+    color: #20C6B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(32, 198, 183, 0.1);
+    border-radius: 50%;
+  }
+  
+  .contactMethod h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .contactMethod p {
+    color: #555;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contactMethod a {
+    color: #20C6B7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contactMethod a:hover {
+    color: #4D9ABF;
+    text-decoration: underline;
+  }
+  
+  .contactForm {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactForm h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .formMessage {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .success {
+    background-color: rgba(39, 174, 96, 0.1);
+    color: #27ae60;
+    border: 1px solid #27ae60;
+  }
+  
+  .error {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    color: #555;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formGroup input:focus,
+  .formGroup textarea:focus {
+    outline: none;
+    border-color: #20C6B7;
+  }
+  
+  .submitButton {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #20C6B7, #4D9ABF);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .contactWrapper {
+      flex-direction: column;
+    }
+  }
