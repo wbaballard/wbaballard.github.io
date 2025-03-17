@@ -34,15 +34,6 @@ export default function Home() {
             <div className={styles.heroText}>
               <h1 className={styles.title}>Ben Ballard</h1>
               <h2 className={styles.subtitle}>Cybersecurity Engineer</h2>
-              
-              <div className={styles.cta}>
-                <Link href="/projects">
-                  <a className={styles.button}>View Projects</a>
-                </Link>
-                <Link href="/contact">
-                  <a className={styles.buttonOutline}>Get In Touch</a>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
