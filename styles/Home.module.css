@@ -10,6 +10,16 @@
   width: 100%;
 }
 
+/* For both sections - shared responsive behavior */
+.hero,
+.bioSection {
+  width: 53%;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -18,7 +28,7 @@
   text-align: center;
   background-color: #c03c31;
   color: #f0edda;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   margin-bottom: 3rem;
   border-bottom: 4px solid #f0edda;
 }
@@ -27,8 +37,10 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .profileImageContainer {
@@ -71,13 +83,14 @@
 }
 
 .bioSection {
-  padding: 0 2rem;
+  padding: 0;
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
   border: 2px solid #c03c31;
   padding: 2rem;
   font-family: 'Courier New', Courier, monospace;
@@ -85,6 +98,7 @@
   background-color: #f0edda;
   position: relative;
   line-height: 1.8;
+  box-sizing: border-box;
 }
 
 .card::before {
@@ -95,7 +109,7 @@
   padding: 0.3rem 0.8rem;
   background-color: #c03c31;
   color: #f0edda;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Quantico', sans-serif;
   font-weight: bold;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -105,6 +119,10 @@
 .highlightsSection {
   padding: 2rem;
   margin-bottom: 3rem;
+  width: 80%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .highlightsSection h2 {
@@ -142,7 +160,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -192,7 +210,7 @@
   color: #f0edda;
   border: 2px solid #c03c31;
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Quantico', sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.05em;
   font-weight: bold;
@@ -215,7 +233,7 @@
   color: #c03c31;
   border: 2px solid #c03c31;
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Quantico', sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.05em;
   font-weight: bold;
@@ -231,7 +249,24 @@
   text-decoration: none;
 }
 
+/* Responsive behavior for different screen sizes */
+@media (max-width: 992px) {
+  .hero,
+  .bioSection {
+    width: 70%;
+  }
+  
+  .highlightsSection {
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero,
+  .bioSection {
+    width: 85%;
+  }
+  
   .heroContent {
     flex-direction: column;
     text-align: center;
@@ -242,7 +277,7 @@
   }
   
   .hero {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
   
   .title {
@@ -260,5 +295,27 @@
   
   .highlights {
     grid-template-columns: 1fr;
+  }
+  
+  .highlightsSection {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero,
+  .bioSection {
+    width: 95%;
+    min-width: auto;
+  }
+  
+  .highlightsSection {
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
   }
 }

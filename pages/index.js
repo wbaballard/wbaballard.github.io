@@ -32,20 +32,19 @@ export default function Home() {
             </div>
             
             <div className={styles.heroText}>
-              <h1 className={styles.title}>
-                <i>Ben Ballard</i>
-              </h1>
+              <h1 className={styles.title}><i>Ben Ballard</i></h1>
               <h2 className={styles.subtitle}>Policy | Privacy | Security</h2>
             </div>
           </div>
         </div>
         
         <div className={styles.bioSection}>
-          <div className={styles.card}>
+          <div className={styles.card} style={{ width: "calc(100% - 4rem)" }}>
             <p><b>Ben Ballard</b> is a cybersecurity engineer at the MITRE Corporation. Ben has served as a Google Public Policy Fellow at the Electronic Frontier Foundation, an X-Force Fellow with the National Security Innovation Network, and a cybersecurity fellow at the Citizen Lab at the Munk School of Global Affairs & Public Policy, University of Toronto. His research centers around the international governance of information security and privacy, especially data appropriation, surveillance, and deception. At work, he supports hardware security projects, cyber resilience efforts, risk assessments, international capacity building, and privacy attacks research.</p>
           </div>
         </div>
-
+        
+        {/* Rest of your page content */}
       </main>
 
       <Footer />
