@@ -14,6 +14,12 @@
   border-bottom: 3px solid #f0edda;
 }
 
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: 'Quantico', sans-serif;
   font-size: 1.8rem;
@@ -25,11 +31,24 @@
   padding: 0.2rem 0.5rem;
   border: 2px solid #f0edda;
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  background-color: #c03c31;
 }
 
 .logo:hover {
   background-color: #f0edda;
   color: #c03c31;
+}
+
+/* SVG Circuit styling */
+.circuitSvg {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  transform: translateX(-10px); /* Pull it slightly closer to the logo */
+  z-index: 1;
 }
 
 .navItems {
@@ -87,6 +106,24 @@
   
   .logo {
     font-size: 1.5rem;
+  }
+  
+  /* Simplify the circuit SVG for mobile */
+  .circuitSvg {
+    width: 60px; /* Make it smaller */
+  }
+  
+  /* Hide some of the circuit elements on mobile */
+  .circuitSvg line:nth-child(3),
+  .circuitSvg line:nth-child(5),
+  .circuitSvg line:nth-child(7) {
+    display: none;
+  }
+  
+  .circuitSvg circle:nth-child(4),
+  .circuitSvg circle:nth-child(6),
+  .circuitSvg circle:nth-child(8) {
+    display: none;
   }
   
   .mobileMenuButton {

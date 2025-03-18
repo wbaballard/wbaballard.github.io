@@ -13,8 +13,37 @@ export default function Navbar() {
   
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
+      <div className={styles.logoContainer}>
         <Link href="/" className={styles.logo}>BB</Link>
+        
+        {/* SVG Circuit Design */}
+        <svg className={styles.circuitSvg} width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Main horizontal line */}
+          <line x1="0" y1="30" x2="60" y2="30" stroke="#f0edda" strokeWidth="2" />
+          
+          {/* Branch 1 - upward */}
+          <line x1="20" y1="30" x2="35" y2="10" stroke="#f0edda" strokeWidth="2" />
+          <circle cx="35" cy="10" r="3" fill="#f0edda" />
+          
+          {/* Branch 2 - downward */}
+          <line x1="40" y1="30" x2="55" y2="45" stroke="#f0edda" strokeWidth="2" />
+          <circle cx="55" cy="45" r="3" fill="#f0edda" />
+          
+          {/* Branch from Branch 1 */}
+          <line x1="35" y1="10" x2="50" y2="10" stroke="#f0edda" strokeWidth="2" />
+          <circle cx="50" cy="10" r="3" fill="#f0edda" />
+          
+          {/* Branch from Branch 2 */}
+          <line x1="55" y1="45" x2="75" y2="45" stroke="#f0edda" strokeWidth="2" />
+          <circle cx="75" cy="45" r="3" fill="#f0edda" />
+          
+          {/* End of main line */}
+          <circle cx="60" cy="30" r="3" fill="#f0edda" />
+          
+          {/* Small dots along main line */}
+          <circle cx="20" cy="30" r="2" fill="#f0edda" />
+          <circle cx="40" cy="30" r="2" fill="#f0edda" />
+        </svg>
       </div>
       
       <button 
