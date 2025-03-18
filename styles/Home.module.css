@@ -6,7 +6,7 @@
 
 .main {
   flex: 1;
-  padding-top: 80px;
+  padding-top: 80px; /* This controls the initial spacing after the fixed navbar */
   width: 100%;
 }
 
@@ -29,6 +29,7 @@
   background-color: #c03c31;
   color: #f0edda;
   padding: 3rem 0;
+  margin-top: 2rem; /* Added margin to create space between navbar and hero */
   margin-bottom: 3rem;
   border-bottom: 4px solid #f0edda;
 }
@@ -102,7 +103,7 @@
 }
 
 .card::before {
-  content: "ABOUT";
+  content: "BLUF";
   position: absolute;
   top: -1.5rem;
   left: 1rem;
