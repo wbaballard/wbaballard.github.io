@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>
-          <i>Ben Ballard | Policy * Privacy * Security</i> 
-        </title>
+        <title>Ben Ballard | Policy * Privacy * Security</title>
         <meta name="description" content="Personal website of Ben Ballard, a cybersecurity engineer at the MITRE Corporation" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -34,35 +32,20 @@ export default function Home() {
             </div>
             
             <div className={styles.heroText}>
-              <h1 className={styles.title}>Ben Ballard</h1>
-              <h2 className={styles.subtitle}>Cybersecurity Engineer</h2>
+              <h1 className={styles.title}>
+                <i>Ben Ballard</i>
+              </h1>
+              <h2 className={styles.subtitle}>Policy | Privacy | Security</h2>
             </div>
           </div>
         </div>
         
         <div className={styles.bioSection}>
           <div className={styles.card}>
-            <p>Ben Ballard is a cybersecurity engineer at the MITRE Corporation. Ben has served as a Google Public Policy Fellow at the Electronic Frontier Foundation, an X-Force Fellow with the National Security Innovation Network, and a cybersecurity fellow at the Citizen Lab at the Munk School of Global Affairs & Public Policy, University of Toronto. His research centers around the international governance of information security and privacy, especially data appropriation, surveillance, and deception. At work, he supports hardware security projects, cyber resilience efforts, risk assessments, international capacity building, and privacy attacks research.</p>
+            <p><b>Ben Ballard</b> is a cybersecurity engineer at the MITRE Corporation. Ben has served as a Google Public Policy Fellow at the Electronic Frontier Foundation, an X-Force Fellow with the National Security Innovation Network, and a cybersecurity fellow at the Citizen Lab at the Munk School of Global Affairs & Public Policy, University of Toronto. His research centers around the international governance of information security and privacy, especially data appropriation, surveillance, and deception. At work, he supports hardware security projects, cyber resilience efforts, risk assessments, international capacity building, and privacy attacks research.</p>
           </div>
         </div>
-        
-        <div className={styles.highlightsSection}>
-          <h2>Research Highlights</h2>
-          <div className={styles.highlights}>
-            <div className={styles.card}>
-              <h3>Hardware Security</h3>
-              <p>Working on cutting-edge hardware security projects to protect against emerging threats.</p>
-            </div>
-            <div className={styles.card}>
-              <h3>Cyber Resilience</h3>
-              <p>Developing frameworks and methodologies to enhance organizational cyber resilience.</p>
-            </div>
-            <div className={styles.card}>
-              <h3>Privacy Research</h3>
-              <p>Investigating privacy attacks and defense mechanisms in modern computing environments.</p>
-            </div>
-          </div>
-        </div>
+
       </main>
 
       <Footer />
