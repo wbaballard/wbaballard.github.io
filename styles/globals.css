@@ -1,28 +1,180 @@
+/* Updated globals.css with retro resume aesthetic */
+
+:root {
+  --primary: #c03c31;     /* Bold red color from reference */
+  --background: #f0edda;  /* Cream background color */
+  --text-dark: #333333;   /* Dark text color */
+  --text-light: #f0edda;  /* Light text color */
+  --accent: #b23025;      /* Slightly darker red for hover states */
+  --border: #c03c31;      /* Border color */
+  --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace; /* Changed to monospace for retro feel */
   line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+  color: var(--text-dark);
+  background-color: var(--background);
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* Apply 'Press Start 2P' to headings and special elements */
+/* Typography updates */
 h1, h2, h3, .title, .pixelated {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Quantico', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
 }
 
+h1, .title {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+/* Link styling */
 a {
-  color: inherit;
+  color: var(--primary);
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Basic page structure */
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Button styling */
+button, .button {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: 2px solid var(--primary);
+  padding: 0.8rem 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.button-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.button-outline:hover {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+/* Card styling */
+.card {
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+  box-shadow: 4px 4px 0 var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 6px 6px 0 var(--box-shadow);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section styling */
+.section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 2px solid var(--primary);
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  background-color: var(--background);
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Utility classes */
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+  color: var(--text-light);
+}
+
+.border-primary {
+  border: 2px solid var(--primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Main content area */
 main {
   padding: 100px 1rem 2rem;
   flex: 1;
@@ -33,56 +185,10 @@ main {
   min-height: calc(100vh - 200px);
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
-}
+/* Import Quantico font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
 
-button {
-  cursor: pointer;
-}
-
-input, button, textarea, select {
-  font: inherit;
-}
-
-/* Utility classes */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 2rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-in;
-}
-
-/* Import Press Start 2P font */
+/* Keep Press Start 2P as fallback */
 @font-face {
   font-family: 'Press Start 2P';
   font-style: normal;
@@ -95,6 +201,10 @@ input, button, textarea, select {
 @media (max-width: 768px) {
   .hidden-mobile {
     display: none;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 

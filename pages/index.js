@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ben Ballard | Cybersecurity Engineer</title>
+        <title>
+          <i>Ben Ballard | Policy * Privacy * Security</i> 
+        </title>
         <meta name="description" content="Personal website of Ben Ballard, a cybersecurity engineer at the MITRE Corporation" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

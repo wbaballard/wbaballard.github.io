@@ -1,33 +1,38 @@
 .footer {
   width: 100%;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #121212;
-  color: white;
+  background-color: #c03c31;
+  color: #f0edda;
+  border-top: 3px solid #f0edda;
 }
 
 .socialLinks {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .socialIcon {
   margin: 0 1rem;
-  color: white;
-  transition: color 0.3s ease;
+  color: #f0edda;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border: 1px solid transparent;
 }
 
 .socialIcon:hover {
-  color: #20C6B7;
+  color: #f0edda;
+  border: 1px solid #f0edda;
 }
 
 .copyright {
-  font-size: 0.7rem;
-  font-family: 'Press Start 2P', cursive;
-  color: #888;
+  font-size: 0.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #f0edda;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
