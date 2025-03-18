@@ -44,10 +44,10 @@ export default function About() {
             <section className={styles.section}>
               <h2>Background</h2>
               <p>
-                I'm a cybersecurity engineer at the MITRE Corporation, where I contribute to a range of projects alongside teams from multiple government agencies on diverse cybersecurity challenges. My work spans hardware security, risk management, privacy research, and international security frameworks.
+              I'm a senior cybersecurity engineer at the MITRE Corporation, where I support and manage a range of projects alongside teams from multiple government agencies on diverse cybersecurity challenges. My work spans international cyber capacity building, risk assessment and management, threat modeling, adversary emulation, privacy engineering, and cyber deception.
               </p>
               <p>
-                My career has taken me through various roles in research, policy development, and technical implementation, with a focus on the intersection of technology, policy, and security. I'm passionate about addressing complex security challenges while considering their broader implications for privacy and civil liberties.
+              I've worn a lot of hats over my career. My background is in policy. I went to school for international affairs and still look at my work through an international lens. I was always fascinated by how digital structures shape us and how policy can be used as a tool to redefine those structures. Now an engineer, I'm able to influence those structures through my work. Take a look below and at the Projects page to see some of my work.
               </p>
             </section>
             
@@ -64,6 +64,12 @@ export default function About() {
                 <p className={styles.role}>Cybersecurity Fellow (June 2020 - July 2021)</p>
                 <p>Researched transparency reporting practices of ISPs and Internet platforms in Canada, the US, Europe, and South America. Published reports on law enforcement data sharing policies of companies operating in these markets.</p>
               </div>
+
+              <div className={styles.experienceItem}>
+                <h3>National Security Innovation Network</h3>
+                <p className={styles.role}>X-Force Fellow (June 2020 - August 2020)</p>
+                <p>Assessed the efficacy of the DoD SBIR/STTR programs' Commercialization Achievement Index for this US DoD program office that creates new communities of innovators to solve national security problems.</p>
+              </div>
               
               <div className={styles.experienceItem}>
                 <h3>Electronic Frontier Foundation</h3>
@@ -71,11 +77,6 @@ export default function About() {
                 <p>Conducted research and published articles on state surveillance, online censorship, data privacy, and user protection. Coordinated with international partner organizations to analyze ISP consumer privacy practices. Drafted advocacy briefs for imprisoned bloggers and technologists.</p>
               </div>
               
-              <div className={styles.experienceItem}>
-                <h3>National Security Innovation Network</h3>
-                <p className={styles.role}>X-Force Fellow (June 2020 - August 2020)</p>
-                <p>Assessed the efficacy of the DoD SBIR/STTR programs' Commercialization Achievement Index for this US DoD program office that creates new communities of innovators to solve national security problems.</p>
-              </div>
             </section>
             
             <section className={styles.section}>
@@ -83,7 +84,7 @@ export default function About() {
               <ul className={styles.education}>
                 <li>
                   <strong>M.A. in Law and Diplomacy</strong> - The Fletcher School, Tufts University (2020)
-                  <p className={styles.educationDetail}>Technology Policy & Security Studies | GPA: 3.8</p>
+                  <p className={styles.educationDetail}>Specialization: Technology Policy & Security Studies</p>
                   <p className={styles.educationDetail}><em>Thesis: A Comparative Analysis of Facial Recognition Technologies Used by Law Enforcement in Chicago and Nice, France</em></p>
                 </li>
                 <li>
@@ -135,8 +136,31 @@ export default function About() {
                   <p>Recognized with a Privacy at MITRE (PAMmie) award for contributions to internally funded research and external projects, including the Department of Veterans Affairs' first privacy/cybersecurity assessment (2025)</p>
                 </div>
                 <div className={styles.accomplishmentItem}>
-                  <h3>Cyber Security Working Group</h3>
-                  <p>Co-organized weekly workshops on cybersecurity tools and techniques at The Fletcher School (2019-2020)</p>
+                  <h3>Recognition - The MITRE Corporation</h3>
+                  <p>x2 Trailblazer Awards</p>
+                  <p>Synergist Award</p>
+                  <p>x9 Spark Awards</p>
+                </div>
+              </div>
+            </section>
+
+            <section className={styles.section}>
+              <h2>Publications</h2>
+              <div className={styles.accomplishmentsGrid}>
+                <div className={styles.accomplishmentItem}>
+                  <h3>Articles</h3>
+                  <h4>MITRE Engenuity</h4>
+                  <p><strong>First Place</strong> in this cyber strategy competition responding to simulated cyber crises (Fall 2019)</p>
+                </div>
+                <div className={styles.accomplishmentItem}>
+                  <h3>PAMmie Award - Rising Star in Privacy and Cybersecurity</h3>
+                  <p>Recognized with a Privacy at MITRE (PAMmie) award for contributions to internally funded research and external projects, including the Department of Veterans Affairs' first privacy/cybersecurity assessment (2025)</p>
+                </div>
+                <div className={styles.accomplishmentItem}>
+                  <h3>Recognition - The MITRE Corporation</h3>
+                  <p>x2 Trailblazer Awards</p>
+                  <p>Synergist Award</p>
+                  <p>x9 Spark Awards</p>
                 </div>
               </div>
             </section>

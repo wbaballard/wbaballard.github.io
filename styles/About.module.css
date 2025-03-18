@@ -94,10 +94,6 @@
   transition: transform 0.3s ease;
 }
 
-.profileImage:hover .actualImage {
-  transform: scale(1.03);
-}
-
 .textContent {
   flex: 1;
 }
