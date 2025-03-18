@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@components/Navbar'
 import Footer from '@components/Footer'
+import Image from 'next/image'
 import styles from '@styles/About.module.css'
 
 export default function About() {
@@ -14,14 +15,28 @@ export default function About() {
       
       <Navbar />
       
+      {/* Wide banner image with overlaid title */}
+      <div className={styles.bannerContainer}>
+        <div className={styles.bannerImage}>
+          <img
+            src="/banner-image.jpg" // Temporary placeholder - replace with your banner
+            alt="Cybersecurity Banner"
+            className={styles.bannerImg}
+          />
+          <div className={styles.bannerOverlay}></div>
+          <h1 className={styles.overlayTitle}>About Me</h1>
+        </div>
+      </div>
+      
       <main className={styles.main}>
-        <h1 className={styles.title}>About Me</h1>
-        
         <div className={styles.content}>
           <div className={styles.imageContainer}>
-            {/* Replace with your actual image or keep a placeholder */}
-            <div className={styles.imagePlaceholder}>
-              <span>Photo</span>
+            <div className={styles.profileImage}>
+              <img 
+                src="/about-image.png" 
+                alt="Ben Ballard decorating a Christmas tree with his cat" 
+                className={styles.actualImage}
+              />
             </div>
           </div>
           
@@ -57,7 +72,6 @@ export default function About() {
             <section className={styles.section}>
               <h2>Education</h2>
               <ul className={styles.education}>
-                {/* Add your actual education here */}
                 <li>
                   <strong>M.S. in Computer Science</strong> - Specialized in Cybersecurity
                 </li>
