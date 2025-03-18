@@ -11,14 +11,21 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "The SOUPS Workshop on Privacy Threat Modeling (WPTM)",
+      title: "Health-Cyber REST Lab - MITRE",
+      description: "I currently serve as a member of MITRE's Health Innovation Center. We support federal and state agencies building cybersecurity resilience within the healthcare sector. We've researched cyber capacity building at rural hospitals, performed table top exercises at major hospitals, and studied cyber attacks against healthcare infrastructure",
+      tech: ["Threat Modeling", "Adversary Emulation", "Healthcare"],
+      year: "2023-Present",
+      url: "https://www.mitre.org/our-impact/mitre-labs/health-and-society-innovation-center" // Add your actual URL here
+    },
+    {
+      title: "The SOUPS Workshop on Privacy Threat Modeling (WPTM) - USENIX",
       description: "The Workshop on Privacy Threat Modeling brings together researchers, practitioners, industry specialists, and government representatives to collaborate on the topic of privacy threat modeling.",
       tech: ["Privacy Engineering", "Threat Modeling", "Privacy Threats"],
       year: "2022-Present",
       url: "https://ptmworkshop.gitlab.io/" // Added URL property
     },
     {
-      title: "PANOPTIC Privacy Threat Model",
+      title: "PANOPTIC Privacy Threat Model - MITRE",
       description: "MITRE PANOPTIC™, the Pattern and Action Nomenclature Of Privacy Threats In Context, is a publicly available privacy threat taxonomy for breaking down and describing privacy attacks against individuals and groups of individuals.",
       tech: ["Privacy Engineering", "Threat Modeling", "Privacy Threats"],
       year: "2021-Present",
