@@ -100,25 +100,31 @@ export default function About() {
               <h2>Skills & Credentials</h2>
               <div className={styles.skills}>
                 <div className={styles.skillCategory}>
-                  <h3>Technical</h3>
+                  <h3>Technical & Linguistic</h3>
                   <ul>
-                    <li>Cybersecurity Tools: Wireshark, IDA, ELK Stack, SecurITree, ATT&CK Navigator</li>
+                    <li>Cybersecurity Tools: Kali, Caldera, Wireshark, IDA, ELK Stack, SecurITree, ATT&CK Navigator</li>
                     <li>Programming: C++, Python, HTML5, CSS, Javascript</li>
                     <li>Data Analysis: STATA, RStudio, Gephi, NodeXL</li>
-                    <li>Vulnerability Assessment</li>
-                    <li>Security Architecture</li>
+                    <li>Threat Hunting</li>
+                    <li>Threat Modeling</li>
+                    <li>Social Network Analysis</li>
+                    <li>French: Advanced Low (ACTFL Certified)</li>
+                    <li>Spanish: Basic</li>
                   </ul>
                 </div>
                 
                 <div className={styles.skillCategory}>
-                  <h3>Research & Languages</h3>
+                  <h3>Research</h3>
                   <ul>
-                    <li>Privacy Analysis</li>
-                    <li>Surveillance Technology</li>
+                    <li>Law and Policy Analysis</li>
+                    <li>Drafting Legislation</li>
                     <li>International Security Frameworks</li>
-                    <li>Policy Development</li>
-                    <li>French: Advanced Low (ACTFL Certified)</li>
-                    <li>Spanish: Basic</li>
+                    <li>Strategy Development</li>
+                    <li>Cyber Threat Intelligence</li>
+                    <li>Threat Assessment</li>
+                    <li>Risk Assessment</li>
+                    <li>Critical Infrastructure Assessment and Protection</li>
+                    <li>Project Management (Both Technical and Non-Technical Teams)</li>
                   </ul>
                 </div>
               </div>
@@ -129,7 +135,8 @@ export default function About() {
               <div className={styles.accomplishmentsGrid}>
                 <div className={styles.accomplishmentItem}>
                   <h3>The Atlantic Council - Cyber 9/12 Strategy Challenge</h3>
-                  <p><strong>First Place</strong> in this cyber strategy competition responding to simulated cyber crises (Fall 2019)</p>
+                  <p><strong>First Place</strong> in this cyber strategy competition responding to simulated cyber crisis (Fall 2019)</p>
+                  <p><strong>Judged</strong> three subsequent competitions (NYC 2023, Cape Town 2024, DC 2025)</p>
                 </div>
                 <div className={styles.accomplishmentItem}>
                   <h3>PAMmie Award - Rising Star in Privacy and Cybersecurity</h3>
@@ -146,23 +153,118 @@ export default function About() {
 
             <section className={styles.section}>
               <h2>Publications</h2>
-              <div className={styles.accomplishmentsGrid}>
-                <div className={styles.accomplishmentItem}>
-                  <h3>Articles</h3>
-                  <h4>MITRE Engenuity</h4>
-                  <p><strong>First Place</strong> in this cyber strategy competition responding to simulated cyber crises (Fall 2019)</p>
-                </div>
-                <div className={styles.accomplishmentItem}>
-                  <h3>PAMmie Award - Rising Star in Privacy and Cybersecurity</h3>
-                  <p>Recognized with a Privacy at MITRE (PAMmie) award for contributions to internally funded research and external projects, including the Department of Veterans Affairs' first privacy/cybersecurity assessment (2025)</p>
-                </div>
-                <div className={styles.accomplishmentItem}>
-                  <h3>Recognition - The MITRE Corporation</h3>
-                  <p>x2 Trailblazer Awards</p>
-                  <p>Synergist Award</p>
-                  <p>x9 Spark Awards</p>
-                </div>
-              </div>
+              <ul className={styles.publications}>
+              <li className={styles.publicationItem}>
+                      <p>
+                        <a href="https://center-for-threat-informed-defense.github.io/threat-modeling-with-attack/" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className={styles.pubTitleLink}>
+                          Threat Modeling with ATT&CK
+                        </a>
+                        . Schechter, Tyler, Ben Ballard, Kyle Wallace, Courtney Hassenfeldt, and Tiffany Bergeron. CT0122, Center for Threat Informed Defense, MITRE Engenuity, 2024.
+                      </p>
+                    </li>
+                    <li className={styles.publicationItem}>
+                      <p>
+                        <a href="https://www.usenix.org/system/files/soups2024_poster19_abstract-katcher_final.pdf" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className={styles.pubTitleLink}>
+                          The PANOPTIC™ Privacy Threat Model
+                        </a>
+                        . Katcher, Samantha, Ben Ballard, Cara Bloom, Katie Isaacson, Julie McEwen, Stuart Shapiro, Shelby Slotter, Mark Paes, and Ryan Xu. USENIX, 2024.
+                      </p>
+                    </li>
+                    <li className={styles.publicationItem}>
+                      <p>
+                        <a href="https://www.usenix.org/system/files/soups2024_poster19-katcher_final.pdf" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className={styles.pubTitleLink}>
+                          Privacy Threat Modeling for Everyone: MITRE PANOPTIC
+                        </a>
+                        . Katcher, Samantha, Ben Ballard, Katie Isaacson, Julie McEwen, Stuart Shapiro, and Shelby Slotter. USENIX, 2024.
+                      </p>
+                    </li>
+                    <li className={styles.publicationItem}>
+                      <p>
+                        <a href="https://ptmworkshop.gitlab.io/static/media/WPTM_Summary_2024.a3e8d575a4b8c20102bd.pdf" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className={styles.pubTitleLink}>
+                          Privacy Threat Modeling Workshop Summary 2024
+                        </a>
+                        . Ballard, Ben, et al. SOUPS Workshop on Privacy Threat Modeling, USENIX, 2024.
+                      </p>
+                    </li>
+                    <li className={styles.publicationItem}>
+                      <p>
+                        <a href="https://ptmworkshop.gitlab.io/wptm22/static/media/PTM-Workshop-Summary.d0d710a693619cff9705.pdf" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className={styles.pubTitleLink}>
+                          Privacy Threat Modeling Workshop Summary 2022
+                        </a>
+                        . Bloom, Cara, Ben Ballard, et al. SOUPS Workshop on Privacy Threat Modeling, USENIX, 2022.
+                      </p>
+                    </li>
+                <li className={styles.publicationItem}>
+                      <p>
+                        <a href="https://policyreview.info/articles/analysis/mixed-traditions-evaluating-telecommunications-transparency" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className={styles.pubTitleLink}>
+                          Mixed traditions: evaluating telecommunications transparency
+                        </a>
+                        . Ballard, Ben, and Parsons, Christopher. Internet Policy Review 11.1 (2022). Web.
+                      </p>
+                    </li>
+                <li className={styles.publicationItem}>
+                    <p>
+                      <a href="https://utoronto.scholaris.ca/items/12ddb02f-0996-4602-9d5d-c052eef3977b" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className={styles.pubTitleLink}>
+                        Pandemic Privacy: A Preliminary Analysis of Collection Technologies, Data Collection Laws, and Legislative Reform during COVID-19
+                      </a>
+                      . Ballard, Ben et al. Scholaris, University of Toronto, 2021. Web.
+                    </p>
+                  </li>
+                  <li className={styles.publicationItem}>
+                    <p>
+                      <a href="https://www.eff.org/deeplinks/2019/08/ipandetec-rates-panamas-isps-its-first-quien-defiende-tus-datos-report" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className={styles.pubTitleLink}>
+                        IPANDETEC Rates Panama's ISPs in Its First "¿Quién Defiende Tus Datos?" Report
+                      </a>
+                      . Ballard, Ben. Electronic Frontier Foundation, 13 Aug. 2019.
+                    </p>
+                  </li>
+                  <li className={styles.publicationItem}>
+                    <p>
+                      <a href="https://www.eff.org/deeplinks/2019/07/chile-hears-who-has-their-data-thanks-years-quien-defiende-tus-datos" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className={styles.pubTitleLink}>
+                        Chile Hears Who Has Their Data, Thanks to Years of "¿Quién Defiende Tus Datos?"
+                      </a>
+                      . Ballard, Ben. Electronic Frontier Foundation, 31 Jul. 2019.
+                    </p>
+                  </li>
+                  <li className={styles.publicationItem}>
+                    <p>
+                      <a href="https://www.fletcherforum.org/the-rostrum/2018/12/14/voter-data-microtargeting-and-the-digitization-of-elections" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className={styles.pubTitleLink}>
+                        Voter Data, Microtargeting, and the Digitization of Elections
+                      </a>
+                      . Ballard, Ben. The Fletcher Forum of World Affairs, The Fletcher School of Law and Diplomacy, 14 Dec. 2018.
+                    </p>
+                  </li>
+              </ul>
             </section>
           </div>
         </div>

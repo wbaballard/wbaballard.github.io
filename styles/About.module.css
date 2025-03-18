@@ -141,6 +141,25 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Publications styles */
+.publications {
+  list-style-type: none;
+  padding: 0;
+}
+
+.publicationItem {
+  margin-bottom: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.pubTitle {
+  font-weight: bold;
+  color: #333;
+}
+
 .skills {
   display: flex;
   gap: 2rem;

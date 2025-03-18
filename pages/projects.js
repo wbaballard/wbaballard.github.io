@@ -12,37 +12,37 @@ export default function Projects() {
   const projects = [
     {
       title: "The SOUPS Workshop on Privacy Threat Modeling (WPTM)",
-      description: "Developed a comprehensive framework for evaluating and testing hardware security components in embedded systems, with a focus on identifying vulnerabilities in supply chain processes.",
-      tech: ["Security Testing", "Hardware Analysis", "Risk Assessment"],
+      description: "The Workshop on Privacy Threat Modeling brings together researchers, practitioners, industry specialists, and government representatives to collaborate on the topic of privacy threat modeling.",
+      tech: ["Privacy Engineering", "Threat Modeling", "Privacy Threats"],
       year: "2022-Present",
       url: "https://ptmworkshop.gitlab.io/" // Added URL property
     },
     {
       title: "PANOPTIC Privacy Threat Model",
-      description: "Researched and implemented privacy-enhancing technologies to enable secure data analysis without compromising sensitive personal information.",
-      tech: ["Differential Privacy", "Homomorphic Encryption", "Python"],
+      description: "MITRE PANOPTIC™, the Pattern and Action Nomenclature Of Privacy Threats In Context, is a publicly available privacy threat taxonomy for breaking down and describing privacy attacks against individuals and groups of individuals.",
+      tech: ["Privacy Engineering", "Threat Modeling", "Privacy Threats"],
       year: "2021-Present",
       url: "https://ptmworkshop.gitlab.io/#/panoptic" // Add your actual URL here
     },
     {
       title: "Threat Modeling with MITRE ATT&CK",
       description: "Threat Modeling with ATT&CK provides a recommended approach that integrates MITRE ATT&CK® – the common language that security operations teams rely upon – into their organization’s threat modeling practices.",
-      tech: ["Open Source Intelligence", "Data Visualization", "Research"],
+      tech: ["Cyber Threat Intelligence", "Threat Modeling", "MITRE ATT&CK"],
       year: "2024",
       url: "https://center-for-threat-informed-defense.github.io/threat-modeling-with-attack/" // Add your actual URL here
     },
     {
       title: "Pandemic Privacy - Citizen Lab",
       description: "We compared how various information technologies were deployed to collect data during COVID-19. We examined whether Canadian health, privacy, or emergency laws hindered pandemic response efforts, and assessed the potential implications of reforming data protection laws to permit broader collection, use, or disclosure of personal information in future health emergencies.",
-      tech: ["Risk Management", "Web Development", "JavaScript"],
+      tech: ["Comparative Analysis", "International Law", "Healthcare"],
       year: "2021",
       url: "https://citizenlab.ca/2021/09/pandemic-privacy-collection-technologies-data-collection-laws-and-legislative-reform-during-covid-19/" // Add your actual URL here
     },
     {
       title: "Is Your Face Really Your Own - TEDxTufts",
-      description: "We compared how various information technologies were deployed to collect data during COVID-19. We examined whether Canadian health, privacy, or emergency laws hindered pandemic response efforts, and assessed the potential implications of reforming data protection laws to permit broader collection, use, or disclosure of personal information in future health emergencies.",
-      tech: ["Risk Management", "Web Development", "JavaScript"],
-      year: "2021",
+      description: "In this talk I focus on facial recognition technology and its implications for privacy and civil liberties. I discuss how facial recognition has rapidly advanced and become integrated into various aspects of our lives, from unlocking our phones to surveillance systems in public spaces.",
+      tech: ["Surveillance", "TEDx", "Policing"],
+      year: "2020",
       url: "https://www.youtube.com/watch?v=KmZ7T2tL3Og",
       videoId: "KmZ7T2tL3Og", // YouTube video ID
       type: "video" // Specify this is a video project
