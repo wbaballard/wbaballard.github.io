@@ -23,6 +23,8 @@
   height: 100%;
   object-fit: cover; /* This ensures the image covers the area without distortion */
   object-position: center; /* Centers the image */
+  position: relative;
+  z-index: 1; /* Lower z-index for the image */
 }
 
 .bannerOverlay {
@@ -31,7 +33,28 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)); /* Subtle dark gradient */
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)); /* Darkened for better text contrast */
+  z-index: 2; /* Higher than the image but lower than the title */
+}
+
+/* Title overlay on banner - no background */
+.overlayTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Quantico', sans-serif;
+  font-size: 3.5rem; /* Increased size for better visibility */
+  color: #f0edda;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Enhanced text shadow for better contrast */
+  margin: 0;
+  text-align: center;
+  z-index: 3; /* Highest z-index to ensure it's on top */
+  padding: 0.5rem;
+  border-bottom: 3px solid #f0edda;
+  /* Removed background-color */
 }
 
 .main {
@@ -40,19 +63,8 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-}
-
-.title {
-  font-family: 'Quantico', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #c03c31;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-bottom: 2px solid #c03c31;
-  padding-bottom: 0.5rem;
-  display: inline-block;
+  position: relative;
+  z-index: 1; /* Ensure main content is above the banner */
 }
 
 .content {
@@ -62,31 +74,13 @@
 }
 
 .imageContainer {
-  /* Increased width and made it more flexible */
-  flex: 0 0 400px; /* Increased from 300px to 400px */
-  max-width: 40%; /* Added max-width as percentage for flexibility */
+  flex: 0 0 400px;
+  max-width: 40%;
 }
 
-/* Image placeholder styling (kept for fallback) */
-.imagePlaceholder {
-  width: 100%;
-  height: 350px;
-  background-color: #f0edda;
-  border: 2px solid #c03c31;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #c03c31;
-  font-family: 'Quantico', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* New profile image styling */
 .profileImage {
   width: 100%;
-  /* Increased height to better fit your portrait-oriented photo */
-  height: 500px; /* Increased from 350px to 500px */
+  height: 500px;
   border: 2px solid #c03c31;
   overflow: hidden;
   position: relative;
@@ -96,9 +90,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Adjusted object position to better frame your photo */
-  object-position: center; /* Changed from center top to center */
+  object-position: center;
   transition: transform 0.3s ease;
+}
+
+.profileImage:hover .actualImage {
+  transform: scale(1.03);
 }
 
 .textContent {
@@ -179,6 +176,10 @@
     flex: 0 0 350px;
     max-width: 100%;
   }
+  
+  .overlayTitle {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -198,5 +199,16 @@
   
   .skillCategory {
     margin-bottom: 1.5rem;
+  }
+  
+  .overlayTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlayTitle {
+    font-size: 2rem;
+    border-bottom: 2px solid #f0edda;
   }
 }

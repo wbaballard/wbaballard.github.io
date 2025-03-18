@@ -11,7 +11,8 @@
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-bottom: 3px solid #f0edda;
+  /* Removed the cream-colored border-bottom */
+  /* Formerly: border-bottom: 3px solid #f0edda; */
 }
 
 .logoContainer {
@@ -141,7 +142,8 @@
     flex-direction: column;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-top: 2px solid #f0edda;
+    /* Also removed cream border here */
+    /* Formerly: border-top: 2px solid #f0edda; */
   }
   
   .navItems li {

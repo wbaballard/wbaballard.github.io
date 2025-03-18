@@ -136,7 +136,7 @@ export default function Projects() {
           <h2>More Work</h2>
           <p>
             This is a selection of my recent work. I've contributed to many other projects related to 
-            cybersecurity policy, privacy research, and technical security analysis. 
+            policy, privacy, and security. 
             For more information about my research and professional work, please check my 
             LinkedIn or GitHub profiles linked in the footer.
           </p>
