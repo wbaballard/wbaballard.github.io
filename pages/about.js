@@ -326,6 +326,27 @@ export default function About() {
                 <h2 className={styles.sectionHeading}>Presentations & Talks</h2>
                 <ul className={styles.presentations}>
                   <li className={styles.presentationItem}>
+                    <h3>RSA Conference 2025: How to Create a Threat Modeling Process and use ATT&CK</h3>
+                    <p className={styles.presentationDetail}>
+                      Presented by Kyle Wallace and Adam Shostack. Kyle and Adam Hosted a workshop to teach attendees how to craft a threat model with MITRE ATT&CK using the framework developed by our team at CTID.
+                    </p>
+                    <p className={styles.presentationMeta}>Sept 2024 | Danbury, CT</p>
+                  </li>
+                  <li className={styles.presentationItem}>
+                    <h3>BSides CT 2024: Turn Your Threat Model into a Supermodel with ATT&CK</h3>
+                    <p className={styles.presentationDetail}>
+                      Hosted a workshop to teach attendees how to craft a threat model with MITRE ATT&CK using the framework developed by our team at CTID.
+                    </p>
+                    <p className={styles.presentationMeta}>Sept 2024 | Danbury, CT</p>
+                  </li>
+                  <li className={styles.presentationItem}>
+                    <h3>Securing Rural Hospitals: How to Build Cyber Resiliency with Limited Resources</h3>
+                    <p className={styles.presentationDetail}>
+                      Presented research on methods for building cyber resiliency in rural hospitals and clinics
+                    </p>
+                    <p className={styles.presentationMeta}>June 2024 | Kearney, NE</p>
+                    </li>
+                  <li className={styles.presentationItem}>
                     <h3>TEDxTufts: Is Your Face Really Your Own?</h3>
                     <p className={styles.presentationDetail}>
                       A talk on facial recognition technology and its implications for privacy and civil liberties.
@@ -334,27 +355,6 @@ export default function About() {
                       </a>
                     </p>
                     <p className={styles.presentationMeta}>April 2020 | Tufts University, Medford, MA</p>
-                  </li>
-                  <li className={styles.presentationItem}>
-                    <h3>MITRE Health-Cyber REST Lab: Healthcare Cybersecurity Resilience</h3>
-                    <p className={styles.presentationDetail}>
-                      Presented findings on cybersecurity resilience in the healthcare sector at the annual Healthcare Information and Management Systems Society (HIMSS) conference.
-                    </p>
-                    <p className={styles.presentationMeta}>March 2023 | Chicago, IL</p>
-                  </li>
-                  <li className={styles.presentationItem}>
-                    <h3>Privacy Threat Modeling: MITRE PANOPTIC</h3>
-                    <p className={styles.presentationDetail}>
-                      Workshop presentation on applying the PANOPTIC privacy threat model for security practitioners.
-                    </p>
-                    <p className={styles.presentationMeta}>July 2022 | SOUPS Workshop on Privacy Threat Modeling</p>
-                  </li>
-                  <li className={styles.presentationItem}>
-                    <h3>Comparing International Approaches to Privacy During COVID-19</h3>
-                    <p className={styles.presentationDetail}>
-                      Panel discussion analyzing how different countries approached data collection and privacy during the COVID-19 pandemic.
-                    </p>
-                    <p className={styles.presentationMeta}>September 2021 | Citizen Lab Summer Institute (Virtual)</p>
                   </li>
                 </ul>
               </section>
