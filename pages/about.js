@@ -57,7 +57,7 @@ export default function About() {
               I'm a senior cybersecurity engineer at the MITRE Corporation, where I support and manage a range of projects alongside teams from multiple government agencies on diverse cybersecurity challenges. My work spans international cyber capacity building, risk assessment and management, threat modeling, adversary emulation, privacy engineering, and cyber deception.
               </p>
               <p>
-              I've worn a lot of hats over my career. My background is in policy. I went to school for international affairs and still look at my work through an international lens. I was always fascinated by how digital structures shape us and how policy can be used as a tool to redefine those structures. Now an engineer, I'm able to influence those structures through my work. Take a look below and at the Projects page to see some of my work.
+              Through my work, I serve as an interlocutor for engineers and policy professionals. I take technical solutions and translate them into policy, and vice versa. Check out the tabs below for more information on my work.
               </p>
             </section>
           </div>
@@ -326,9 +326,16 @@ export default function About() {
                 <h2 className={styles.sectionHeading}>Presentations & Talks</h2>
                 <ul className={styles.presentations}>
                   <li className={styles.presentationItem}>
+                      <h3>USENIX PEPR 2025: Privacy Paradigms for Law Enforcement Response</h3>
+                      <p className={styles.presentationDetail}>
+                        Presented by Lukas Bundonis and Ben Ballard. Explores the role private data brokers play in the execution of law enforcement response requests and how that role has change with the advent of emerging technologies.
+                      </p>
+                      <p className={styles.presentationMeta}>June 2025 | Santa Monica, CA</p>
+                  </li>
+                  <li className={styles.presentationItem}>
                     <h3>RSA Conference 2025: How to Create a Threat Modeling Process and use ATT&CK</h3>
                     <p className={styles.presentationDetail}>
-                      Presented by Kyle Wallace and Adam Shostack. Kyle and Adam Hosted a workshop to teach attendees how to craft a threat model with MITRE ATT&CK using the framework developed by our team at CTID.
+                      Presented by Kyle Wallace and Adam Shostack. Kyle and Adam Hosted a workshop based on our work to teach attendees how to craft a threat model with MITRE ATT&CK using the framework developed by our team at CTID.
                     </p>
                     <p className={styles.presentationMeta}>Sept 2024 | Danbury, CT</p>
                   </li>
