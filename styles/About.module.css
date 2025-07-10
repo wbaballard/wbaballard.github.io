@@ -54,23 +54,28 @@
   z-index: 3; /* Highest z-index to ensure it's on top */
   padding: 0.5rem;
   border-bottom: 3px solid #f0edda;
-  /* Removed background-color */
 }
 
 .main {
   flex: 1;
-  padding: 2rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   position: relative;
-  z-index: 1; /* Ensure main content is above the banner */
+  z-index: 1;
 }
 
-.content {
+/* Bio section with photo and background */
+.bioWrapper {
   display: flex;
   gap: 3rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+  width: 100%;
 }
 
 .imageContainer {
@@ -102,7 +107,7 @@
   margin-bottom: 2rem;
 }
 
-.section h2 {
+.sectionHeading {
   font-family: 'Quantico', sans-serif;
   font-size: 1.3rem;
   margin-bottom: 1rem;
@@ -113,6 +118,113 @@
   padding-left: 0.8rem;
 }
 
+/* Full width tabbed container */
+.fullWidthTabContainer {
+  width: 100%;
+  /* Removed the border-top */
+  padding-top: 1rem;
+  background-color: #f0edda;
+  position: relative;
+}
+
+/* Tab container with clean square outline */
+.tabOuterContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  border-left: 1px solid #c03c31;
+  border-right: 1px solid #c03c31;
+}
+
+/* Top horizontal line that doesn't extend to the sides */
+.tabOuterContainer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #c03c31;
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* Removed the border-bottom */
+  position: relative;
+}
+
+.tabButton {
+  background-color: #f0edda;
+  color: #333;
+  border: none;
+  border-top: 1px solid #c03c31;
+  border-bottom: 1px solid #c03c31;
+  padding: 0.8rem 1.5rem;
+  min-width: 180px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Quantico', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: -1px; /* Compensate for borders */
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tabButton:first-child {
+  border-left: 1px solid #c03c31;
+}
+
+.tabButton:last-child {
+  border-right: 1px solid #c03c31;
+  margin-right: 0;
+}
+
+.tabButton:hover {
+  background-color: rgba(192, 60, 49, 0.1);
+}
+
+.activeTab {
+  background-color: #c03c31;
+  color: #f0edda;
+  border-color: #c03c31;
+  border-bottom-color: #c03c31;
+}
+
+.tabContentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  border-left: 1px solid #c03c31;
+  border-right: 1px solid #c03c31;
+  border-bottom: 1px solid #c03c31;
+}
+
+.tabContent {
+  display: none;
+  padding: 2rem;
+  background-color: #f0edda;
+  animation: fadeIn 0.5s ease;
+  /* Removed the border since we're doing a clean outline around the entire tab container */
+}
+
+.activeContent {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Experience tab styles */
 .experienceItem {
   margin-bottom: 1.5rem;
 }
@@ -141,25 +253,34 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Publications styles */
-.publications {
-  list-style-type: none;
-  padding: 0;
+.accomplishmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
-.publicationItem {
-  margin-bottom: 1.2rem;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
+.accomplishmentItem {
+  border: 1px solid rgba(192, 60, 49, 0.3);
+  padding: 1rem;
+  background-color: rgba(240, 237, 218, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pubTitle {
-  font-weight: bold;
-  color: #333;
+.accomplishmentItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 3px 3px 0 rgba(192, 60, 49, 0.2);
 }
 
+.accomplishmentItem h3 {
+  font-family: 'Quantico', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #c03c31;
+  border-bottom: 1px solid rgba(192, 60, 49, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+/* Skills tab styles */
 .skills {
   display: flex;
   gap: 2rem;
@@ -186,6 +307,83 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Publications tab styles */
+.publications {
+  list-style-type: none;
+  padding: 0;
+}
+
+.publicationItem {
+  margin-bottom: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.pubTitle, .pubTitleLink {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.pubTitleLink:hover {
+  color: #c03c31;
+  text-decoration: underline;
+}
+
+/* Presentations tab styles */
+.presentations {
+  list-style-type: none;
+  padding: 0;
+}
+
+.presentationItem {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(192, 60, 49, 0.2);
+}
+
+.presentationItem:last-child {
+  border-bottom: none;
+}
+
+.presentationItem h3 {
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.presentationDetail {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.presentationDetail a {
+  color: #c03c31;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.presentationDetail a:hover {
+  text-decoration: underline;
+}
+
+.presentationMeta {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
 @media (max-width: 992px) {
   .imageContainer {
     flex: 0 0 350px;
@@ -195,10 +393,15 @@
   .overlayTitle {
     font-size: 3rem;
   }
+  
+  .tabButton {
+    min-width: 150px;
+    padding: 0.8rem 1rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .content {
+  .bioWrapper {
     flex-direction: column;
   }
   
@@ -206,6 +409,44 @@
     flex: 0 0 auto;
     max-width: 100%;
     margin-bottom: 2rem;
+  }
+  
+  .overlayTitle {
+    font-size: 2.5rem;
+  }
+  
+  .tabOuterContainer {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .tabContentContainer {
+    border-left: none;
+    border-right: none;
+  }
+  
+  .tabButtons {
+    flex-direction: column;
+  }
+  
+  .tabButton {
+    margin-right: 0;
+    margin-bottom: -1px; /* Compensate for border overlap */
+    width: 100%;
+    border: 1px solid #c03c31;
+  }
+  
+  .tabButton:first-child {
+    border-left: 1px solid #c03c31;
+  }
+  
+  .tabButton:last-child {
+    border-right: 1px solid #c03c31;
+    margin-bottom: 0;
+  }
+  
+  .tabContent {
+    padding: 1rem;
   }
   
   .skills {
@@ -216,8 +457,8 @@
     margin-bottom: 1.5rem;
   }
   
-  .overlayTitle {
-    font-size: 2.5rem;
+  .accomplishmentsGrid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -225,5 +466,10 @@
   .overlayTitle {
     font-size: 2rem;
     border-bottom: 2px solid #f0edda;
+  }
+  
+  .tabButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
   }
 }

@@ -11,18 +11,18 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Global Cyber Capacity Building - MITRE",
+      description: "MITRE's global cyber capacity building team supports the US State Department's Bureau of Cyberspace and Digital Policy. We work with US partners around the world to bolster national cyber capabilities, address gaps in national cybersecurity legislation, impliment national cybersecurity strategies, and share subject matter expertise with security professionals in the field.",
+      tech: ["International Cyber Capacity Building", "Legislative Assessment", "Strategy"],
+      year: "2023-Present",
+      url: "https://industrialcyber.co/threat-landscape/two-new-mitre-programs-central-to-strengthening-cyber-defense-work-on-building-global-cyber-capacity/" // Added URL property
+    },
+    {
       title: "Health-Cyber REST Lab - MITRE",
-      description: "I currently serve as a member of MITRE's Health Innovation Center. We support federal and state agencies building cybersecurity resilience within the healthcare sector. We've researched cyber capacity building at rural hospitals, performed table top exercises at major hospitals, and studied cyber attacks against healthcare infrastructure",
+      description: "MITRE's Health Innovation Center supports federal and state agencies building cybersecurity resilience within the healthcare sector. We've researched cyber capacity building at rural hospitals, performed table top exercises at major hospitals, and studied cyber attacks against healthcare infrastructure",
       tech: ["Threat Modeling", "Adversary Emulation", "Healthcare"],
       year: "2023-Present",
       url: "https://www.mitre.org/our-impact/mitre-labs/health-and-society-innovation-center" // Add your actual URL here
-    },
-    {
-      title: "The SOUPS Workshop on Privacy Threat Modeling (WPTM) - USENIX",
-      description: "The Workshop on Privacy Threat Modeling brings together researchers, practitioners, industry specialists, and government representatives to collaborate on the topic of privacy threat modeling.",
-      tech: ["Privacy Engineering", "Threat Modeling", "Privacy Threats"],
-      year: "2022-Present",
-      url: "https://ptmworkshop.gitlab.io/" // Added URL property
     },
     {
       title: "PANOPTIC Privacy Threat Model - MITRE",
