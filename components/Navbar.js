@@ -79,6 +79,9 @@ export default function Navbar() {
         <li className={router.pathname === "/projects" ? styles.active : ""}>
           <Link href="/projects" className={styles.navItem}>Projects</Link>
         </li>
+        <li className={router.pathname === "/contact" ? styles.active : ""}>
+          <Link href="/contact" className={styles.navItem}>Contact</Link>
+        </li>
       </ul>
     </nav>
   )
