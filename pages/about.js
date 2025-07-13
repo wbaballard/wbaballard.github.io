@@ -147,7 +147,7 @@ export default function About() {
                 <div className={styles.accomplishmentsGrid}>
                   <div className={styles.accomplishmentItem}>
                     <h3>The Atlantic Council - Cyber 9/12 Strategy Challenge</h3>
-                    <p><strong>First Place</strong> in this cyber strategy competition responding to simulated cyber crisis (Fall 2019)</p>
+                    <p><strong>First Place</strong> in the 2019 NYC cyber strategy competition hosted by Colombia SIPA (Fall 2019)</p>
                     <p><strong>Judged</strong> three subsequent competitions (NYC 2023, Cape Town 2024, DC 2025)</p>
                   </div>
                   <div className={styles.accomplishmentItem}>
